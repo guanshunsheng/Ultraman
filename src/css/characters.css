@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin-top: 50px;
+}
+.nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 宋体;
+}
+.nav{
+    font-family: 宋体;
+    color: black;
+    font-size: 14px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px 5px #858585;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    overflow: hidden;
+ }
+ .nav img{
+    width: 20vh;
+ }
+ .nav ul{
+    width: 40vw;
+    display: flex;
+    justify-content:space-evenly;
+ }
+ .nav ul li{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+}
+.nav ul li:nth-child(3){
+    border-bottom: 5px solid #f16522;
+}
+.nav ul li:nth-child(3) a{
+    transform: scale(1.2);
+    color: #f16522;
+ }
+ .nav ul li a:hover{
+    transform: scale(1.2);
+    color: #f16522;
+    cursor: pointer;
+ }
+ .search{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    left: 60vh;
+}
+.search-border{
+    height: 4vh;
+    border: 0;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    padding: 0 10px;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0,0.3);
+}
+.search-border::after{
+    content: "";
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    background-image: url("./images/search-normal.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.search-border>input{
+
+    border: 0;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+}
+.search-border>input:focus::placeholder{
+    opacity: 0;
+}
+.button{
+    margin-left: 10px;
+    color: black;
+    border: 0;
+    height: 5vh;
+    width: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: white;
+    }
+.button:hover{
+    transform: scale(1.1);
+    color: #f16522;
+}
+/* 以上为导航栏样式 */
+
+
+main{
+    display:flex;
+
+    justify-content: space-evenly;
+    
+    
+    background: #16384c;
+}
+.container
+
+{
+
+position: relative;
+
+width: 1100px;
+
+display: flex;
+
+justify-content: space-evenly;
+
+
+flex-wrap: wrap;
+
+padding: 30px;
+
+}
+
+.container .card
+
+{
+
+position: relative;
+
+max-width: 300px;
+
+height: 480px;
+
+background: #fff;
+
+margin: 40px 10px;
+
+padding: 20px 15px;
+
+display: flex;
+
+flex-direction: column;
+
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+
+}
+
+
+
+.container .card .imgBx
+
+{
+
+position: relative;
+
+width: 260px;
+
+height: 260px;
+
+
+top: -60px;
+
+left: 20px;
+
+z-index: 1;
+
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+transition: all 0.3s ease;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #4b4b4b;
+}
+.container .card .imgBx img
+
+{
+
+/*max-width: 100%;*/
+
+height: 260px;
+
+width: 260px;
+
+border-radius: 5px;
+
+transition: all 0.3s cubic-bezier(0.37, 0, 0.63, 1);
+
+}
+
+.container .card .imgBx img:hover{
+    transform: scale(1.1);
+    border-radius: 50%;
+    filter:brightness(110%);
+}
+.container .card .imgBx:hover {
+    box-shadow: none;
+}
+
+
+.container .card .content
+
+{
+
+position: relative;
+
+margin-top: -140px;
+
+padding: 10px 15px;
+
+text-align:center;
+
+color: #111;
+
+margin-top: -40px;
+
+transition: 0.3s ease-in-out;
+
+}
+.container .card .content p{
+    text-align: left;
+}
+
+
+
+.div-box{
+    margin-top: 10px;
+    width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-a{
+    width: 120px;
+    height: 50px;
+    border-radius: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.3s linear;
+}
+.div-a a{
+    color: #16384c;
+
+    font-size: 16px;
+
+    line-height: 50px;
+   
+    text-decoration: none;
+   
+}
+
+.div-a:hover{
+    background-color: #16384c;
+}
+.div-a:hover a{
+    color: #ffffff;
+}
+
+.move{
+    animation: move both;
+    animation-timeline: view(90% 5%);
+}
+
+@keyframes move{
+    0%{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
